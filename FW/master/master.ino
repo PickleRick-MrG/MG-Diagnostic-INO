@@ -1,10 +1,14 @@
-//#include <eeprom.h>
+#include <EEPROM.h>
+
+#define SERIAL_BAUDRATE     115200
 
 void setup(){
-    Serial.begin(115200);
+    // Initialization of the Serial Port
+    Serial.begin(SERIAL_BAUDRATE);
     while (!Serial){ ; }
     delay(100);
     Serial.print("> Serial Initialized.\n");
+    // Initialization of the BuiltIn LED
     pinMode(LED_BUILTIN, OUTPUT);
     Serial.print("> LEDs Initialized.\n");
     Serial.print("\n-----------------------------\n\n");
