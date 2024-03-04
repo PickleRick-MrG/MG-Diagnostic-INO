@@ -1,13 +1,30 @@
-
+/*******************************************************************************
+ * @file        serial.cpp
+ * @author      R. Galviati
+ * @version     v0.1
+ * @headerfile  serial.h
+ * 
+ * @brief
+*******************************************************************************/
 #include "serial.h"
 #include "Arduino.h"
 
-void Serial_CLS::_init_serial(){
-    Serial.begin(SERIAL_BAUDRATE);
-    while(!Serial){ ; }
+SERIAL_OBJ::SERIAL_OBJ()
+{
 }
 
-void Serial_CLS::logoPrinter(){
+SERIAL_OBJ::~SERIAL_OBJ()
+{
+}
+
+void SERIAL_OBJ::_init_Serial()
+{
+    Serial.begin(SERIAL_BAUDRATE);
+    while (!Serial){ ; }
+}
+
+void SERIAL_OBJ::logoPrinter()
+{
     Serial.print("\n");
     Serial.print("    ############    \n");
     Serial.print("  #              #  \n");
