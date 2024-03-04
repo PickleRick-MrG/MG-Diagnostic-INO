@@ -10,10 +10,14 @@
 #include "LED.h"
 #include "Arduino.h"
 
-LED::LED(){
-
+LED_OBJ::LED_OBJ()
+{
 }
 
-void LED::_init_LED(){
+LED_OBJ::~LED_OBJ()
+{
+}
+
+void LED_OBJ::_init_LED(){
     pinMode(LED_BUILTIN, OUTPUT);
 }

@@ -9,10 +9,11 @@
 #ifndef LED_H
 #define LED_H
 
-class LED
+class LED_OBJ
 {
     public:
-        LED(); // Constructor
+        LED_OBJ();  // Constructor
+        ~LED_OBJ(); // Destructor
         void _init_LED();
 
     private:

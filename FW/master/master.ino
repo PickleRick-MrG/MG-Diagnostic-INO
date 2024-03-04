@@ -5,16 +5,17 @@
  * 
  * @brief       Arduino Nano Every Master File
 *******************************************************************************/
-#include <EEPROM.h>
+#include "eeprom_map.h"
 #include "serial.h"
 #include "LED.h"
 
-#define SERIAL_BAUDRATE     115200
-#define EEPROM_TIME_ADD     1
-#define MAX_TIME            1000
+LED_OBJ myLED;
+SERIAL_OBJ mySerial;
+EEPROM_MAP_OBJ myEEPROM;
 
 void setup(){
-    
+    mySerial._init_Serial();
+    myLED._init_LED();
 }
 
 void loop(){
