@@ -1,14 +1,21 @@
 /*******************************************************************************
+ * @file        LED.h
+ * @author      R. Galviati
+ * @date        v0.1
+ * 
+ * @brief       Arduino Nano Every LED library file
  * 
 *******************************************************************************/
 #ifndef LED_H
 #define LED_H
 
-class LED_CLS{
+class LED
+{
     public:
+        LED(); // Constructor
         void _init_LED();
-        void heartBeat();
-        void warningFlash();
-        void timerLED(int totalTime, int cnt);
+
+    private:
 };
+
 #endif // LED_H
