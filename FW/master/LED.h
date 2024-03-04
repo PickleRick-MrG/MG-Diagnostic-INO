@@ -1,7 +1,7 @@
 /*******************************************************************************
  * @file        LED.h
  * @author      R. Galviati
- * @date        v0.1
+ * @version     v0.1
  * 
  * @brief       Arduino Nano Every LED library file
  * 

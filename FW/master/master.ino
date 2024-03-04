@@ -1,5 +1,9 @@
 /*******************************************************************************
+ * @file        master.ino
+ * @author      R. Galviati
+ * @version     v0.1
  * 
+ * @brief       Arduino Nano Every Master File
 *******************************************************************************/
 #include <EEPROM.h>
 #include "serial.h"

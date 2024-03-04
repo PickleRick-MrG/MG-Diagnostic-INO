@@ -1,5 +1,5 @@
 /*******************************************************************************
- * @file        LED.c
+ * @file        LED.cpp
  * @author      R. Galviati
  * @version     v0.1
  * @headerfile  LED.h
