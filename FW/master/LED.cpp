@@ -18,3 +18,13 @@ LED_OBJ::LED_OBJ()
 LED_OBJ::~LED_OBJ()
 {
 }
+
+void LED_OBJ::timerLED(int cnt, uint8_t led0PIN, uint8_t led1PIN, 
+                    uint8_t led2PIN)
+{
+    
+}
+
+void LED_OBJ::warningFlash(){
+
+}
