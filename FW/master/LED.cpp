@@ -8,6 +8,7 @@
  * 
 *******************************************************************************/
 #include "LED.h"
+#include "PinOut.h"
 #include "Arduino.h"
 
 LED_OBJ::LED_OBJ()
@@ -16,8 +17,4 @@ LED_OBJ::LED_OBJ()
 
 LED_OBJ::~LED_OBJ()
 {
-}
-
-void LED_OBJ::_init_LED(){
-    pinMode(LED_BUILTIN, OUTPUT);
 }

@@ -8,14 +8,16 @@
 #include "eeprom_map.h"
 #include "serial.h"
 #include "LED.h"
+#include "PinOut.h"
 
 LED_OBJ myLED;
 SERIAL_OBJ mySerial;
 EEPROM_MAP_OBJ myEEPROM;
+PINOUT_OBJ myPINs;
 
 void setup(){
     mySerial._init_Serial();
-    myLED._init_LED();
+    myPINs._init_PINS();
 }
 
 void loop(){

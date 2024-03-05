@@ -14,8 +14,6 @@ class LED_OBJ
     public:
         LED_OBJ();  // Constructor
         ~LED_OBJ(); // Destructor
-        void _init_LED();
-
     private:
 };
 
