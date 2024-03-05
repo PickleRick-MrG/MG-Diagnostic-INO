@@ -10,5 +10,6 @@ private:
 public:
     EEPROM_MAP_OBJ();   // Constructor
     ~EEPROM_MAP_OBJ();  // Destructor
+    uint32_t eeprom_get_last_time();
 };
 #endif // EEPROM_MAP_H
