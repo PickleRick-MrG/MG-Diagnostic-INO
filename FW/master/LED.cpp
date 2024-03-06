@@ -1,4 +1,4 @@
-/*******************************************************************************
+/**
  * @file        LED.cpp
  * @author      R. Galviati
  * @version     v0.1
@@ -6,7 +6,7 @@
  * 
  * @brief       Arduino Nano Every LED source file.
  * 
-*******************************************************************************/
+*/
 #include "LED.h"
 #include "PinOut.h"
 #include "Arduino.h"

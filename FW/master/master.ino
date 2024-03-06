@@ -1,10 +1,10 @@
-/*******************************************************************************
+/**
  * @file        master.ino
  * @author      R. Galviati
  * @version     v0.1
  * 
  * @brief       Arduino Nano Every Master File
-*******************************************************************************/
+*/
 #include "eeprom_map.h"
 #include "serial.h"
 #include "LED.h"

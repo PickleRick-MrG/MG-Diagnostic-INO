@@ -1,4 +1,4 @@
-/*******************************************************************************
+/**
  * @file        eeprom_map.cpp
  * @author      R. Galviati
  * @version     v0.1
@@ -6,7 +6,7 @@
  * 
  * @brief       Arduino Nano Every eeprom source file.
  * 
-*******************************************************************************/
+*/
 #include "eeprom_map.h"
 #include <EEPROM.h>
 #include "Arduino.h"

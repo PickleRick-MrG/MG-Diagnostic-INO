@@ -1,11 +1,11 @@
-/*******************************************************************************
+/**
  * @file        serial.cpp
  * @author      R. Galviati
  * @version     v0.1
  * @headerfile  serial.h
  * 
- * @brief
-*******************************************************************************/
+ * @brief       Arduino Nano Every serial port Source file
+*/
 #include "serial.h"
 #include "Arduino.h"
 
