@@ -1,5 +1,14 @@
+/*******************************************************************************
+ * @file        eeprom_map.h
+ * @author      R. Galviati
+ * @version     v0.1
+ * 
+ * @brief       Arduino Nano Every eeprom library file
+ * 
+*******************************************************************************/
 #ifndef EEPROM_MAP_H
 #define EEPROM_MAP_H
+
 #include <stdint.h>
 #include <string.h>
 
