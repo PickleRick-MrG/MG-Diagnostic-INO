@@ -9,6 +9,9 @@
 #ifndef LED_H
 #define LED_H
 
+#include <stdint.h>
+#include <string.h>
+
 class LED_OBJ
 {
     public:

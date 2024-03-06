@@ -1,5 +1,7 @@
 #ifndef EEPROM_MAP_H
 #define EEPROM_MAP_H
+#include <stdint.h>
+#include <string.h>
 
 #define EEPROM_TIME_ADD     1
 
