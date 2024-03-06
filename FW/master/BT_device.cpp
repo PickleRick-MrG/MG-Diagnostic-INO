@@ -5,7 +5,6 @@
  * @headerfile  BT_device.h
  * 
  * @brief       Arduino Nano Every BT communication source file.
- * 
 */
 #include "BT_device.h"
 

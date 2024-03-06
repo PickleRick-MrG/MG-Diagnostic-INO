@@ -5,7 +5,6 @@
  * @headerfile  eeprom_map.h
  * 
  * @brief       Arduino Nano Every eeprom source file.
- * 
 */
 #include "eeprom_map.h"
 #include <EEPROM.h>
