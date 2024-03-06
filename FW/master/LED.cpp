@@ -5,7 +5,6 @@
  * @headerfile  LED.h
  * 
  * @brief       Arduino Nano Every LED source file.
- * 
 */
 #include "LED.h"
 #include "PinOut.h"
