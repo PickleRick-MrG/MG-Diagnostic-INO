@@ -1,21 +1,24 @@
-/*******************************************************************************
+/**
  * @file        LED.h
  * @author      R. Galviati
  * @version     v0.1
  * 
  * @brief       Arduino Nano Every LED library file
- * 
-*******************************************************************************/
+*/
 #ifndef LED_H
 #define LED_H
+
+#include <stdint.h>
+#include <string.h>
 
 class LED_OBJ
 {
     public:
         LED_OBJ();  // Constructor
         ~LED_OBJ(); // Destructor
-        void _init_LED();
-
+        void timerLED(int cnt, uint8_t led0PIN, uint8_t led1PIN, 
+                    uint8_t led2PIN);
+        void warningFlash();
     private:
 };
 
