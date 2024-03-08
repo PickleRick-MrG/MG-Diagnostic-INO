@@ -1,6 +1,8 @@
 #ifndef BT_DEVICE_H
 #define BT_DEVICE_H
 
+#define BT_ADDRESS_MASTER       0xAA
+
 enum BT_CONNECTION
 {
     CONNECTED,
