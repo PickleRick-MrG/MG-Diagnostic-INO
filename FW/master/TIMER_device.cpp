@@ -10,7 +10,7 @@
 
 #include "time.h"
 #include "timers.h"
-#include "interrupt.h"
+//#include "interrupt.h"
 
 TIMER_DEVICE_OBJ::TIMER_DEVICE_OBJ()
 {

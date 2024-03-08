@@ -8,6 +8,9 @@
 #ifndef BT_DEVICE_H
 #define BT_DEVICE_H
 
+#define BT_ADDRESS_MASTER       0xAA
+
+
 class BT_DEVICE_OBJ
 {
     public:
