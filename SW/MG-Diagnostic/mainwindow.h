@@ -18,6 +18,13 @@ public:
     ~MainWindow();
     void build();
 
+private slots:
+    void on_actionConnect_triggered();
+
+    void on_actionDisconnect_triggered();
+
+    void on_actionReconnect_triggered();
+
 private:
     Ui::MainWindow *ui;
 };

@@ -9,9 +9,12 @@ BT_device::~BT_device()
 {
 }
 
-void BT_device::connect()
+bool BT_device::connect()
 {
+    bool state = false;
+    state = true;
     qDebug() << "Connect BTN pressed!";
+    return state;
 }
 
 void BT_device::disconnect()
