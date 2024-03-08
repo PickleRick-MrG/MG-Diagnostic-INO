@@ -2,6 +2,7 @@
 #define BT_DEVICE_H
 
 #define BT_ADDRESS_MASTER       0xAA
+#define BT_ADDRESS_HOST         0x00
 
 enum BT_CONNECTION
 {
