@@ -18,12 +18,27 @@ LED_OBJ::~LED_OBJ()
 {
 }
 
-void LED_OBJ::timerLED(int cnt, uint8_t led0PIN, uint8_t led1PIN, 
-                    uint8_t led2PIN)
+void LED_OBJ::timerLED(int timer, int max_time)
 {
-    
+    int delta = floor(((float)max_time) / 3);
+    if (timer < (1 * delta)){
+        digitalWrite(LED_TIME1_PIN, HIGH);
+        digitalWrite(LED_TIME2_PIN, LOW);
+        digitalWrite(LED_TIME3_PIN, LOW);
+    } else if (timer < (2 * delta)){
+        digitalWrite(LED_TIME1_PIN, HIGH);
+        digitalWrite(LED_TIME2_PIN, HIGH);
+        digitalWrite(LED_TIME3_PIN, LOW);
+    } else if (timer < (3 * delta)){
+        digitalWrite(LED_TIME1_PIN, HIGH);
+        digitalWrite(LED_TIME2_PIN, HIGH);
+        digitalWrite(LED_TIME3_PIN, HIGH);
+    } else {
+
+    }
 }
 
-void LED_OBJ::warningFlash(){
+void LED_OBJ::warningFlash()
+{
 
 }

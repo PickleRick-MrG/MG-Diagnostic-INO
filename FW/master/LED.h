@@ -13,13 +13,13 @@
 
 class LED_OBJ
 {
+    private:
+        /* data */
     public:
         LED_OBJ();  // Constructor
         ~LED_OBJ(); // Destructor
-        void timerLED(int cnt, uint8_t led0PIN, uint8_t led1PIN, 
-                    uint8_t led2PIN);
+        void timerLED(int timer, int max_time);
         void warningFlash();
-    private:
 };
 
 #endif // LED_H

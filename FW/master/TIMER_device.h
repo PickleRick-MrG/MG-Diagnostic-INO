@@ -17,6 +17,8 @@
 
 class TIMER_DEVICE_OBJ
 {
+    private:
+        /* data */
     public:
         TIMER_DEVICE_OBJ();
         ~TIMER_DEVICE_OBJ();
