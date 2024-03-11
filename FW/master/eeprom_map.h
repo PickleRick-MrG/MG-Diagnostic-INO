@@ -23,4 +23,5 @@ public:
     uint32_t eeprom_get_time();
     void eeprom_set_time(uint32_t time);
 };
+
 #endif // EEPROM_MAP_H

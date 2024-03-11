@@ -38,6 +38,7 @@ void LED_OBJ::timerLED(int timer, int max_time)
     }
 }
 
-void LED_OBJ::warningFlash(){
+void LED_OBJ::warningFlash()
+{
 
 }

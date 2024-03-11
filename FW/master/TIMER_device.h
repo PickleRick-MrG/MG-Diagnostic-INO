@@ -14,10 +14,11 @@
 
 #define CONTROL_LOOP_FREQ       100
 #define BT_STREAM_FREQ          100
-#define MONITOR_STREAM_FREQ     30
 
 class TIMER_DEVICE_OBJ
 {
+    private:
+        /* data */
     public:
         TIMER_DEVICE_OBJ();
         ~TIMER_DEVICE_OBJ();

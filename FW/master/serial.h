@@ -13,14 +13,13 @@
 
 class SERIAL_OBJ
 {
+    private:
+        /* data */
     public:
         SERIAL_OBJ();   // Constructor
         ~SERIAL_OBJ();  // Destructor
         void _init_Serial();
         void logoPrinter();
 };
-
-#define SERIAL_BAUDRATE         115200
-
 
 #endif // SERIAL_H

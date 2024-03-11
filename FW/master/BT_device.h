@@ -15,10 +15,11 @@
 
 class BT_DEVICE_OBJ
 {
+    private:
+        /* data */
     public:
         BT_DEVICE_OBJ();   // Constructor
         ~BT_DEVICE_OBJ();  // Destructor
-        //void _init_BTdevice(byte rxPin, byte txPin);
 };
 
 #endif // BT_DEVICE_H

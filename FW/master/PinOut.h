@@ -17,12 +17,12 @@
 
 class PINOUT_OBJ
 {
+    private:
+        /* data */
     public:
         PINOUT_OBJ();
         ~PINOUT_OBJ();
         void _init_PINS();
 };
-
-
 
 #endif // PINOUT_H
