@@ -18,9 +18,9 @@ BT_DEVICE_OBJ::BT_DEVICE_OBJ()
 BT_DEVICE_OBJ::~BT_DEVICE_OBJ()
 {
 }
-
+/*
 void BT_DEVICE_OBJ::_init_BTdevice(byte rxPin, byte txPin)
 {
     pinMode(rxPin, INPUT);
     pinMode(txPin, OUTPUT);
-}
+}*/

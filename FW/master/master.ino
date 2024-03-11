@@ -15,6 +15,8 @@ SERIAL_OBJ mySerial;
 EEPROM_MAP_OBJ myEEPROM;
 PINOUT_OBJ myPINs;
 
+unsigned long myTime = 0;
+
 void setup(){
     mySerial._init_Serial();
     myPINs._init_PINS();
@@ -23,6 +25,15 @@ void setup(){
 }
 
 void loop(){
+    // Raise BuiltIn LED
     digitalWrite(LED_BUILTIN, HIGH);
-    digitalWrite(LED_TIME1_PIN, HIGH);
+    static int counter = 0;
+    // Update Time
+    myTime = millis() / 1000;
+    myLED.timerLED(myTime, 30);
+    if (counter % 100000 == 0){
+        counter = 0;
+        // Print Time
+        Serial.println((int)myTime);
+    }
 }

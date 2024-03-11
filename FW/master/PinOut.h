@@ -11,9 +11,9 @@
 #include <stdint.h>
 #include <string.h>
 
-#define LED_TIME1_PIN       PIN_A0
-#define LED_TIME2_PIN       PIN_A1
-#define LED_TIME3_PIN       PIN_A2
+#define LED_TIME1_PIN       A0
+#define LED_TIME2_PIN       A1
+#define LED_TIME3_PIN       A2
 
 class PINOUT_OBJ
 {
