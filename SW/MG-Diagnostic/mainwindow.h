@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QListWidgetItem>
+#include <QBluetoothSocket>
+#include <QBluetoothDeviceDiscoveryAgent>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -16,14 +19,16 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    void build();
 
 private slots:
-    void on_actionConnect_triggered();
 
-    void on_actionDisconnect_triggered();
+    void on_findBTN_clicked();
 
-    void on_actionReconnect_triggered();
+    void on_onBTN_clicked();
+
+    void on_offBTN_clicked();
+
+    void on_listWidget_itemClicked(QListWidgetItem *item);
 
 private:
     Ui::MainWindow *ui;
