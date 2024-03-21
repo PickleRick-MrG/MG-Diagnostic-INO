@@ -78,3 +78,7 @@ void EEPROM_MAP_OBJ::eeprom_write(int add, uint8_t val)
         EEPROM.write(add, val);
     }
 }
+
+void EEPROM_MAP_OBJ::reset_eeprom_time(){
+    eeprom_write(ADD_H2O_TIME, 0);
+}

@@ -14,6 +14,7 @@
 #define LED_TIME1_PIN       A0
 #define LED_TIME2_PIN       A1
 #define LED_TIME3_PIN       A2
+#define RESET_TIMER_PIN     A7
 
 class PINOUT_OBJ
 {

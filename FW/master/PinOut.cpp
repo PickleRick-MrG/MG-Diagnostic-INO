@@ -26,4 +26,5 @@ void PINOUT_OBJ::_init_PINS()
     pinMode(LED_TIME1_PIN, OUTPUT);
     pinMode(LED_TIME2_PIN, OUTPUT);
     pinMode(LED_TIME3_PIN, OUTPUT);
+    pinMode(RESET_TIMER_PIN, INPUT);
 }

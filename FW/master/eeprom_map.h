@@ -49,6 +49,7 @@ public:
     uint32_t eeprom_get_time();
     void eeprom_set_time(uint32_t time);
     void eeprom_write(int add, uint8_t val);
+    void reset_eeprom_time();
 };
 
 #endif // EEPROM_MAP_H

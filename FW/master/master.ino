@@ -17,18 +17,30 @@ PINOUT_OBJ ObjPIN;
 
 
 unsigned long currTime = 0;
+int resetState = 0;
 
 void setup(){
     ObjSerial._init_Serial();
     ObjPIN._init_PINS();
     delay(100);
     ObjSerial.logoPrinter();
+    // Raise BuiltIn LED
+    digitalWrite(LED_BUILTIN, HIGH);
 }
 
 void loop(){
-    // Raise BuiltIn LED
-    digitalWrite(LED_BUILTIN, HIGH);
+    resetState = digitalRead(RESET_TIMER_PIN);
+    if (resetState == HIGH){
+        ObjEEPROM.reset_eeprom_time();
+        Serial.print("Time Resetted!\n");
+        delay(1000); // To avoid Double Resets.
+    }
+
     // Update Time
     currTime = millis() / 1000;
-    ObjLED.timerLED(currTime, 30);
+    // Autosave TIME
+    if (((millis()) % 10000) == 0){
+        Serial.print("Autosave\n");
+    }
+    ObjLED.timerLED(currTime, 60);
 }
