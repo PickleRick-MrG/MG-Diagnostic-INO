@@ -22,7 +22,7 @@
  * 
  * @see EEPROM_MAP_ENUM
 */
-static const uint32_t eepromInitTable[EEPROM_PARAM_MAX][4] = 
+const uint32_t EEPROM_MAP_OBJ::eepromInitTable[EEPROM_PARAM_MAX][4] = 
 {
     {0, 0, 0, 0},       // ADD_REV_FW
     {1, 0, 0, 600},       // ADD_TIME_CURR
@@ -54,13 +54,13 @@ EEPROM_MAP_OBJ::~EEPROM_MAP_OBJ()
 {
 }
 
-uint32_t EEPROM_MAP_OBJ::eeprom_get_time()
+uint8_t EEPROM_MAP_OBJ::eeprom_get_time()
 {
-    uint32_t time = EEPROM.read(ADD_TIME_CURR);
+    uint8_t time = EEPROM.read(ADD_TIME_CURR);
     return time;
 }
 
-void EEPROM_MAP_OBJ::eeprom_set_time(uint32_t time)
+void EEPROM_MAP_OBJ::eeprom_set_time(uint8_t time)
 {
     eeprom_write(ADD_TIME_CURR, time);
 }
@@ -80,5 +80,5 @@ void EEPROM_MAP_OBJ::eeprom_write(int add, uint8_t val)
 }
 
 void EEPROM_MAP_OBJ::reset_eeprom_time(){
-    eeprom_write(ADD_H2O_TIME, 0);
+    eeprom_write(ADD_TIME_CURR, 0);
 }
