@@ -17,6 +17,7 @@ PINOUT_OBJ ObjPIN;
 
 
 unsigned long currTime = 0;
+unsigned long lastTime = 0;
 int resetState = 0;
 
 void setup(){
@@ -34,10 +35,12 @@ void loop(){
         ObjEEPROM.reset_eeprom_time();
         Serial.print("Time Resetted!\n");
         delay(1000); // To avoid Double Resets.
+        lastTime = millis() / 1000;
+        currTime = 0;
     }
 
     // Update Time
-    currTime = millis() / 1000;
+    currTime = millis() / 1000 - lastTime;
     // Autosave TIME
     if (((millis()) % 10000) == 0){
         Serial.print("Autosave\n");
