@@ -79,6 +79,17 @@ void EEPROM_MAP_OBJ::eeprom_write(int add, uint8_t val)
     }
 }
 
+uint8_t EEPROM_MAP_OBJ::eeprom_read(int add){
+    uint8_t ret = 0;
+    if (add >= EEPROM_PARAM_MAX){
+        Serial.println("WNG: EEPROM address out of bounds!");
+    } else {
+        ret = 
+        EEPROM.read(add);
+    }
+    return ret;
+}
+
 void EEPROM_MAP_OBJ::reset_eeprom_time(){
     eeprom_write(ADD_TIME_CURR, 0);
 }

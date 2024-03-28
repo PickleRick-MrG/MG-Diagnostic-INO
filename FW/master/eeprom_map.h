@@ -11,6 +11,8 @@
 #include <stdint.h>
 #include <string.h>
 
+#define SAVE_TIME_SLEEP     300000
+
 /**
  * @brief EEPROM memory map Addresses
 */
@@ -49,6 +51,7 @@ public:
     uint8_t eeprom_get_time();
     void eeprom_set_time(uint8_t time);
     void eeprom_write(int add, uint8_t val);
+    uint8_t eeprom_read(int add);
     void reset_eeprom_time();
 };
 
